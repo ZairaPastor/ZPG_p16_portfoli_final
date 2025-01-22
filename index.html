@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfoli</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">     
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>     
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Chivo:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kameron:wght@400..700&family=Karla:ital,wght@0,200..800;1,200..800&family=Lora:wght@400..700&family=New+Rocker&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pirata+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Mono+One&family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+    <style>
+
+        body {
+            font-family: 'Bitter', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            display: flex;
+            justify-content: center; /* Centrado en el medio de la página */
+            align-items: flex-start; 
+            height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row; /* Todo en una fila */
+            margin: 64px; /* Margen general de 64px */
+            width: 100%;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(5, 128px); /* 5 columnas de 128px */
+            grid-template-rows: repeat(3, 128px); /* 3 filas de 128px */
+            grid-gap: 64px; /* Espacio entre los cuadros */
+            margin: 64px;
+            width: 100%;
+            position: absolute;
+}
+
+        .content {
+            margin-right: 64px; /* Separar los títulos de los cuadrados */
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 64px;
+            font-weight: 600;
+            text-align: left;
+        }
+
+        h2 {
+            font-size: 20px;
+            margin-bottom: 32px;
+            font-weight: 400;
+            text-align: left;
+
+        }
+
+        h3 {
+            font-size: 16px;
+            margin-top: 32px;
+            text-align: left;
+            font-weight: 400;
+            line-height: 1.5;
+        }
+
+        h4 {
+            font-size: 12px;
+            margin-top: 8px;
+            font-weight: 400;
+            text-align: center;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(6, 128px); 
+            grid-gap: 64px; 
+            position: relative;
+        }
+
+        .grid-item {
+            position: relative;
+            text-align: center;
+        }
+
+        .block {
+            width: 128px; 
+            height: 128px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            margin: 0 auto;
+        }
+
+        .block[data-color="yellow"] {
+            background-color: #f6c700;
+        }
+
+        .block[data-color="blue"] {
+            background-color: #003b70;
+        }
+
+        .block[data-color="red"] {
+            background-color: #d72638;
+        }
+
+        .block[data-color="black"] {
+            background-color: #000000;
+        }
+
+        .block[data-color="gray"] {
+            background-color: #d3d3d3;
+        }
+
+        .grid-item h4 {
+            font-size: 12px;
+            color: #333;
+        }
+
+        .grid-item a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 64px; /* Espacio desde el borde inferior */
+            left: 64px; /* Alineación a la izquierda */
+            font-size: 16px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Contenedor de títulos -->
+        <div class="content">
+            <h1>Portfoli</h1>
+            <h2>Perfil</h2>
+            <h2>Preferencies</h2>
+            <h2>Contes</h2>
+            <h2 class="bold">Treballs</h2>
+            <h2>Tarifes</h2>
+        </div>
+
+        <!-- Contenedor de la grilla -->
+        <div class="grid-container">
+            <div class="grid-item">
+                <a href="https://zairapastor.github.io/ZPG_p1/">
+                    <div class="block" data-color="yellow"></div>
+                    <h4>p1_localhost</h4>
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="https://zairapastor.github.io/ZPG_p2/">
+                    <div class="block" data-color="gray"></div>
+                    <h4>p2_images_video_audio</h4>
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="https://zairapastor.github.io/ZPG_p3/">
+                    <div class="block" data-color="red"></div>
+                    <h4>p3_html_css</h4>
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="https://zairapastor.github.io/ZPG_p4/">
+                    <div class="block" data-color="gray"></div>
+                    <h4>p4_interpretacio_css</h4>
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="https://www.figma.com/design/FrW08uh2vtB4BFbUXsDo3B/Untitled?node-id=0-1&t=D1AtWsL6yhG1EmzL-1">
+                    <div class="block" data-color="yellow"></div>
+                    <h4>p5_seleccio_interpretacio_disseny_en_html_css</h4>
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="https://zairapastor.github.io/ZPG_p6/">
+                    <div class="block" data-color="blue"></div>
+                    <h4>p6_disseny_interpretat_html_css</h4>
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="https://zairapastor.github.io/ZPG_p7/">
+                    <div class="block" data-color="yellow"></div>
+                    <h4>p7_portfoli_B1</h4>
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="https://zairapastor.github.io/ZPG_p8/">
+                    <div class="block" data-color="black"></div>
+                    <h4>p8_flexbox</h4>
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="https://www.figma.com/design/E6EPm65O6PC2z32KSwUx0F/p10?node-id=0-1&t=fomsr7sUueJud0Ti-1">
+                    <div class="block" data-color="gray"></div>
+                    <h4>p10_flexbox_bio_i_obra</h4>
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="https://www.figma.com/design/Bc6O7mLANpOePF0mWuTEqp/Card?node-id=0-1&t=RkfQiNsuUIchYzNL-1">
+                    <div class="block" data-color="blue"></div>
+                    <h4>p11_dibuixem_figma_card</h4>
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="https://zairapastor.github.io/ZPG_p12/">
+                    <div class="block" data-color="black"></div>
+                    <h4>p12_card_mediaqueries</h4>
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="https://zairapastor.github.io/ZPG_p13_grids/">
+                    <div class="block" data-color="black"></div>
+                    <h4>p13_grids</h4>
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="https://zairapastor.github.io/p14_novembre25/">
+                    <div class="block" data-color="red"></div>
+                    <h4>p14_grid_calendari</h4>
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="https://zairapastor.github.io/ZPG_p15_calendari25/">
+                    <div class="block" data-color="gray"></div>
+                    <h4>p15_portada_calendari</h4>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <div class="footer">
+        <h3>24-25<br>
+        Zaira Pastor Gil<br>
+        2n Disseny Gràfic</h3>
+    </div>
+</body>
+</html>
